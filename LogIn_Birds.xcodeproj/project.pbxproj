@@ -118,7 +118,6 @@
 				15461B9629BF699F00C1C0A1 /* GoogleService-Info.plist */,
 				15461B8F29BF5F4900C1C0A1 /* Extensions */,
 				15461B6229BF571700C1C0A1 /* LogIn_BirdsApp.swift */,
-				15461B6429BF571700C1C0A1 /* ContentView.swift */,
 				15461B6629BF571D00C1C0A1 /* Assets.xcassets */,
 				15461B6829BF571D00C1C0A1 /* LogIn_Birds.entitlements */,
 				15461B6929BF571D00C1C0A1 /* Preview Content */,
@@ -154,7 +153,6 @@
 		15461B8F29BF5F4900C1C0A1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				15461B9429BF63C700C1C0A1 /* AuthView.swift */,
 				15461B9029BF5F5E00C1C0A1 /* String.swift */,
 			);
 			path = Extensions;
@@ -163,6 +161,8 @@
 		15461B9D29BF811A00C1C0A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15461B6429BF571700C1C0A1 /* ContentView.swift */,
+				15461B9429BF63C700C1C0A1 /* AuthView.swift */,
 				15461B8D29BF583000C1C0A1 /* LoginView.swift */,
 				15461B9229BF624000C1C0A1 /* SignUpView.swift */,
 				15461B9E29BF813F00C1C0A1 /* Birds.swift */,

@@ -68,7 +68,6 @@ struct LoginView: View {
                     }
                 }
                 .padding()
-//                .overlay(Capsule().stroke(LinearGradient(gradient: Gradient( colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                            .stroke(
