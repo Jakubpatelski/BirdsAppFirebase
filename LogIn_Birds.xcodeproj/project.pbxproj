@@ -14,6 +14,15 @@
 		15461B7529BF571E00C1C0A1 /* LogIn_BirdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B7429BF571E00C1C0A1 /* LogIn_BirdsTests.swift */; };
 		15461B7F29BF571E00C1C0A1 /* LogIn_BirdsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B7E29BF571E00C1C0A1 /* LogIn_BirdsUITests.swift */; };
 		15461B8129BF571E00C1C0A1 /* LogIn_BirdsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B8029BF571E00C1C0A1 /* LogIn_BirdsUITestsLaunchTests.swift */; };
+		15461B8E29BF583000C1C0A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B8D29BF583000C1C0A1 /* LoginView.swift */; };
+		15461B9129BF5F5E00C1C0A1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B9029BF5F5E00C1C0A1 /* String.swift */; };
+		15461B9329BF624000C1C0A1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B9229BF624000C1C0A1 /* SignUpView.swift */; };
+		15461B9529BF63C700C1C0A1 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B9429BF63C700C1C0A1 /* AuthView.swift */; };
+		15461B9729BF69A000C1C0A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15461B9629BF699F00C1C0A1 /* GoogleService-Info.plist */; };
+		15461B9A29BF6AE800C1C0A1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 15461B9929BF6AE800C1C0A1 /* FirebaseAuth */; };
+		15461B9C29BF6AE800C1C0A1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 15461B9B29BF6AE800C1C0A1 /* FirebaseFirestore */; };
+		15461B9F29BF813F00C1C0A1 /* Birds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461B9E29BF813F00C1C0A1 /* Birds.swift */; };
+		15461BA129BF846400C1C0A1 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15461BA029BF846400C1C0A1 /* ApiCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,13 @@
 		15461B7A29BF571E00C1C0A1 /* LogIn_BirdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogIn_BirdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15461B7E29BF571E00C1C0A1 /* LogIn_BirdsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn_BirdsUITests.swift; sourceTree = "<group>"; };
 		15461B8029BF571E00C1C0A1 /* LogIn_BirdsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn_BirdsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15461B8D29BF583000C1C0A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		15461B9029BF5F5E00C1C0A1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		15461B9229BF624000C1C0A1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		15461B9429BF63C700C1C0A1 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		15461B9629BF699F00C1C0A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15461B9E29BF813F00C1C0A1 /* Birds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birds.swift; sourceTree = "<group>"; };
+		15461BA029BF846400C1C0A1 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15461B9A29BF6AE800C1C0A1 /* FirebaseAuth in Frameworks */,
+				15461B9C29BF6AE800C1C0A1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +113,10 @@
 		15461B6129BF571700C1C0A1 /* LogIn_Birds */ = {
 			isa = PBXGroup;
 			children = (
+				15461BA429BFEFCE00C1C0A1 /* Api */,
+				15461B9D29BF811A00C1C0A1 /* View */,
+				15461B9629BF699F00C1C0A1 /* GoogleService-Info.plist */,
+				15461B8F29BF5F4900C1C0A1 /* Extensions */,
 				15461B6229BF571700C1C0A1 /* LogIn_BirdsApp.swift */,
 				15461B6429BF571700C1C0A1 /* ContentView.swift */,
 				15461B6629BF571D00C1C0A1 /* Assets.xcassets */,
@@ -129,6 +151,33 @@
 			path = LogIn_BirdsUITests;
 			sourceTree = "<group>";
 		};
+		15461B8F29BF5F4900C1C0A1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15461B9429BF63C700C1C0A1 /* AuthView.swift */,
+				15461B9029BF5F5E00C1C0A1 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15461B9D29BF811A00C1C0A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15461B8D29BF583000C1C0A1 /* LoginView.swift */,
+				15461B9229BF624000C1C0A1 /* SignUpView.swift */,
+				15461B9E29BF813F00C1C0A1 /* Birds.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15461BA429BFEFCE00C1C0A1 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				15461BA029BF846400C1C0A1 /* ApiCall.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +194,10 @@
 			dependencies = (
 			);
 			name = LogIn_Birds;
+			packageProductDependencies = (
+				15461B9929BF6AE800C1C0A1 /* FirebaseAuth */,
+				15461B9B29BF6AE800C1C0A1 /* FirebaseFirestore */,
+			);
 			productName = LogIn_Birds;
 			productReference = 15461B5F29BF571700C1C0A1 /* LogIn_Birds.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 15461B5629BF571700C1C0A1;
+			packageReferences = (
+				15461B9829BF6AE800C1C0A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 15461B6029BF571700C1C0A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15461B6B29BF571D00C1C0A1 /* Preview Assets.xcassets in Resources */,
+				15461B9729BF69A000C1C0A1 /* GoogleService-Info.plist in Resources */,
 				15461B6729BF571D00C1C0A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15461B9F29BF813F00C1C0A1 /* Birds.swift in Sources */,
+				15461B8E29BF583000C1C0A1 /* LoginView.swift in Sources */,
+				15461B9329BF624000C1C0A1 /* SignUpView.swift in Sources */,
+				15461B9529BF63C700C1C0A1 /* AuthView.swift in Sources */,
 				15461B6529BF571700C1C0A1 /* ContentView.swift in Sources */,
+				15461B9129BF5F5E00C1C0A1 /* String.swift in Sources */,
+				15461BA129BF846400C1C0A1 /* ApiCall.swift in Sources */,
 				15461B6329BF571700C1C0A1 /* LogIn_BirdsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +667,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15461B9829BF6AE800C1C0A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15461B9929BF6AE800C1C0A1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15461B9829BF6AE800C1C0A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		15461B9B29BF6AE800C1C0A1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15461B9829BF6AE800C1C0A1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15461B5729BF571700C1C0A1 /* Project object */;
 }
