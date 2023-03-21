@@ -13,6 +13,7 @@ struct LoginView: View {
     @Binding var currrentShowingView: String
     @AppStorage("uid") var userID: String = ""
     @AppStorage("email") var userEmail: String = ""
+    @FocusState private var hideKeyboard: Bool
 
     
     @State private var email: String = ""
@@ -31,8 +32,6 @@ struct LoginView: View {
     var body: some View {
         ZStack{
             
-           
-
             VStack(spacing: 30){
                 
                 Spacer()
@@ -58,6 +57,8 @@ struct LoginView: View {
                 HStack{
                     Image(systemName: "mail")
                     TextField("Email", text: $email)
+                        .keyboardType(.emailAddress)
+                        .focused($hideKeyboard)
                     
                     Spacer()
                     
@@ -86,6 +87,8 @@ struct LoginView: View {
                 HStack{
                     Image(systemName: "lock")
                     SecureField("Password", text: $password)
+                        .focused($hideKeyboard)
+
                     
                     Spacer()
                     
@@ -162,6 +165,7 @@ struct LoginView: View {
 
             }
             .padding()
+           
             
            
         }
@@ -169,6 +173,13 @@ struct LoginView: View {
             LinearGradient(colors: [Color.cyan.opacity(0.7), Color.purple.opacity(0.3)], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
         )
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard){
+                Button("Done") {
+                    hideKeyboard = false
+                }
+            }
+        }
     }
 }
 

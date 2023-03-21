@@ -62,12 +62,14 @@ struct BirdRow: View {
     
     var body: some View {
         HStack {
+            
             AsyncImage(url: bird.imageUrl) { image in
                 image
                     .resizable()
-                    .scaledToFit()
-                    .frame(height: 70)
-                    .cornerRadius(10)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 90, alignment: .center)
+                        .cornerRadius(10)
+
             } placeholder: {
                 ProgressView()
 
